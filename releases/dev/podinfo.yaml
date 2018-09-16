@@ -5,13 +5,13 @@ metadata:
   name: podinfo-dev
   namespace: dev
   annotations:
-    flux.weave.works/automated: "true"
+    flux.weave.works/automated: 'true'
     flux.weave.works/tag.chart-image: glob:dev-*
 spec:
   chartGitPath: podinfo
   releaseName: podinfo-dev
   values:
-    image: stefanprodan/podinfo:dev-hdtwcel9
+    image: haigiang0591/podinfo:dev-b
     replicaCount: 1
     hpa:
       enabled: false
